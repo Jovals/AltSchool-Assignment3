@@ -9,111 +9,152 @@
       crossorigin="anonymous"
     ></script>
     <!-- css link  -->
-    <link rel="stylesheet" href="figma1.css" />
-    <title>Assignment1</title>
+    <link rel="stylesheet" href="figma2.css" />
+    <title>Document</title>
   </head>
   <body>
+    <a href="#main-content" class="visually-hidden">Skip to main content</a>
+
     <main>
-      <section class="left-div">
-        <img src="/Assignment/pictures/Logo.png" alt="logo pic" />
-        <div>
-          <h2>For Individuals</h2>
-          <p class="desktop-view">
-            Start benefiting from the wellness experience, for companies looking
-            on increasing productivity, and improving organization wellness.
-          </p>
-          <p class="mobile-view">
-            Inspiring wholesome harmony for the mind, body and spirit for
-            everyone, everywhere
-          </p>
+      <!-- NAVIGATION CODE AND HEADER -->
+      <header>
+        <img
+          class="logo"
+          src="/Assignment/pictures/wppusher-logo copy.png"
+          alt=""
+        />
+        <nav>
+          <ul>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Learn more</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Help</a></li>
+            <li><button class="Account">Account</button></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <!-- CODE FOR WHITE PART -->
+      <section class="div-section" id="main">
+        <div class="white-div">
+          <div class="Checkout-div"><h1>Checkout</h1>
+          <hr size="1" /></div>
+          <!-- CODE FOR THE FORM -->
+          <form action="">
+            <div class="basic-info">
+              <div class="list-div">
+                <div class="number-div">1</div>
+                <div class="basic-info-text"><p>Your basic information</p></div>
+              </div>
+              <div class="basic-row-form">
+                <div class="FirstName-div">
+                  <label for="FirstName" class="grid"> First Name </label>
+                  <input
+                    type="text"
+                    required
+                    placeholder="&nbsp; Jane"
+                    name="FirstName"
+                    id="FirstName"
+                    size="50"
+                  />
+                </div>
+                <div class="LastName-div">
+                  <label for="LastName" class="grid"> Last Name </label>
+                  <input
+                    type="text"
+                    required
+                    placeholder="&nbsp; Doe"
+                    name="LastName"
+                    id="LastName"
+                    size="50"
+                  />
+                </div>
+              </div>
+              <div class="Email-div">
+                <label for="Email" class=""> Email </label>
+                <input
+                  type="email"
+                  required
+                  placeholder="&nbsp; janedoe@example.com"
+                  name="Email"
+                  id="Email"
+                />
+              </div>
+            </div>
+            <!-- PAYMENT INFORMATION FORM -->
+            <hr class="line" size="1" />
+            <div class="payment-div">
+              <div class="list-div2">
+                <div class="number-div1">2</div>
+                <div class="payment"><p>Your payment information</p></div>
+              </div>
+              <div class="Credit-card-form">
+                <label for="Card-details"> Credit Card </label>
+                <div class="Credit-card-input">
+                  <input
+                    type="text"
+                    placeholder="&nbsp; Card Number"
+                    class="card-num"
+                  />
+                  <input type="text" placeholder="MM/YY" class="month-input" />
+                  <input type="text" placeholder="CVC" class="CVC-input" />
+                </div>
+              </div>
+            </div>
+            <hr class="line" size="1" />
+            <button type="submit" value="Purchase" class="Buy">Buy WP Pusher</button>
+          </form>
+          <footer class="first-footer">
+            <p></p><i id="icon" class="fa-regular fa-circle-question"></i>
+            Need any help? Don't
+            hesistate to contact support!</p>
+            <br>
+            <img
+              src="/Assignment/pictures/powered_by_stripe.jpg"
+              alt="powered_by_stripe logo"
+            />
+          </footer>
+        </div>
+        <!-- CODE FOR THE BLUE PART -->
+        <div class="blue-div">
+          <p class="free">Freelancer</p>
+          <div class="year-div">
+            <p class="year1">
+              <sup>$</sup>
+              99
+              <span class="year">/year</span>
+            </p>
+          </div>
+          <p class="auto">Automatically renews after 1 yeaar</p>
+          <div>
+            <div class="blue-list">
+              <ul>
+                <li> <i class="fa-regular fa-circle-check"></i>Use on 5 client sites</li>
+                <li><i class="fa-regular fa-circle-check"></i>Private repositories</li>
+                <li><i class="fa-regular fa-circle-check"></i>Email Support</li>
+              </ul>
+            </div>
+            <p class="clients">Need 20 client sites?</p>
+            <a href="#">Switch to the Agency plan</a>
+            <hr size="2" />
+          </div>
+          
+          <div class="FTP">
+            <p>
+              FTP is horrible to deal with. <span>WP Pusher</span> solves that issue, and the
+              customer support is awesome!
+            </p>
+            <div class="img-div">
+              <img src="/Assignment/pictures/Bitmap.png" alt="picture of Krik Beard" />
+              <p class="name">Krik Beard</p>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="form-div">
-        <form action="" method="post">
-          <div class="grid-div1">
-            <div class="FirstName">
-              <label for="FirstName" class="grid"> First Name </label>
-              <input
-                type="text"
-                required
-                placeholder="&nbsp; Tolu"
-                name="FirstName"
-                id="FirstName"
-                size="50"
-              />
-            </div>
-            <div class="LastName">
-              <label for="LastName" class="grid"> Last Name </label>
-              <input
-                type="text"
-                required
-                placeholder=""
-                name="LastName"
-                id="LastName"
-                size="50"
-              />
-            </div>
-          </div>
-          <div class="grid-div2">
-            <div class="Gender">
-              <label for="Gender" id="" class="grid">Gender</label>
-              <select name="Gender" id="Gender" required class="gender">
-                <option value="" disabled selected hidden>&nbsp; Select here</option>
-                <option value="Male" id="Gender">Male</option>
-                <option value="Female" id="Gender">Female</option>
-              </select>
-            </div>
-            <div class="DateOfBirth">
-              <label for="DateOfBirth" class="grid">Date Of Birth</label>
-              <input type="text" required placeholder="&nbsp; Select here" id="DateOfBirth" />
-              <i class="fa-solid fa-calendar-days"></i>
-            </div>
-          </div>
-          <div class="grid-div3">
-            <div class="Weight">
-              <label for="Weight" class="grid"> Weight(KG)</label>
-              <input
-                type="number"
-                placeholder="&nbsp; Enter Weight"
-                id="Weight"
-                name="Weight"
-              />
-            </div>
-            <div class="Height">
-              <label for="Height" class="grid"> Height(CM)</label>
-              <input
-                type="number"
-                placeholder="&nbsp; Enter height here"
-                id="Height"
-                name="Height"
-              />
-            </div>
-          </div>
-          <div class="column-div">
-            <div>
-              <label for="Activity"> Activity Level </label>
-              <select name="Activity" id="Activity">
-                <option value="" disabled selected hidden>&nbsp; Select here</option>
-                <option value="Activity1" id="Activity"></option>
-                <option value="Activity2" id="Activity"></option>
-              </select>
-            </div>
-            <div class="pass-word">
-              <label for="password" class="row">Password </label>
-              <input type="password" required id="password" />
-              <i class="fa-solid fa-eye"></i>
-            </div>
-          </div>
-          <button type="submit" value="register">Register</button>
-        </form>
-        <footer>
-          <p>
-            By clicking on Register, you agree to our
-            <a href="#">Terms of Use </a> and our
-            <a href="#"> Privacy Policy </a>
-          </p>
-        </footer>
-      </section>
+      <!-- LAST PART OF THE BODY -->
+      <footer class="last-foot">
+        <p>&copy;2018 WP Pusher IVS. <a href="#">Terms of service</a></p>
+      </footer>
     </main>
   </body>
 </html>
